@@ -1,0 +1,23 @@
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+int main()
+{
+    int i,j,n;
+    cin>>n;
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<=i;j++)
+        {
+            cout<<"*";
+            }
+        cout<<endl;
+    }
+    for(i=n;i>1;i--)
+    {
+        for(j=1;j<i;j++)
+            cout<<"#";
+        cout<<endl;
+    }
+    return 0;
+}
