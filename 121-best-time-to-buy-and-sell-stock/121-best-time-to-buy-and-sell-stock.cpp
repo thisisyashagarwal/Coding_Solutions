@@ -8,12 +8,6 @@ public:
             max1 = max( max1, prices[i] - temp);
             if( prices[i] < temp)
                 temp = prices[i];
-            /*temp = prices[i];
-            for( j=i+1; j<n, prices[j] > temp; j++)
-            {
-                if( ( prices[j] - temp) > max1)
-                    max1 = (prices[j]- temp);
-            }*/
         }
         return max1;
     }
