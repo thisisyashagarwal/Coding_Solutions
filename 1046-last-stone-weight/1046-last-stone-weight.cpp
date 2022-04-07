@@ -19,10 +19,10 @@ public:
                 nums[i] = m;
                 i -= 1;
             }
-            for( int j=0; j<n; j++)
-                cout<<nums[j]<<" ";
-            cout<<"*\n";
-            sort( nums.begin(), nums.end());
+            // for( int j=0; j<n; j++)
+            //     cout<<nums[j]<<" ";
+            // cout<<"*\n";
+             sort( nums.begin(), nums.end());
         }
         if( nums[0] == m && n>1)
             return 0;
