@@ -22,12 +22,6 @@ public:
         m[v]++;
         inorder( root->left);
         inorder(root->right);
-        
-        // temp = inorder( root->left, temp);
-        // temp->right = root;
-        // root->left = NULL;
-        // temp = root;
-        // return inorder( root->right, temp );
     }
 
     int findSecondMinimumValue(TreeNode* root) {
@@ -43,22 +37,6 @@ public:
                 return itr->first;
         }
         return  -1;
-//         TreeNode* temp = new TreeNode(0);
-//         inorder( root, temp);
-//         int v;
-//         map<int,int>m;
-//         for( int i=0; i<3; i++)
-//         {
-//             if( temp == NULL)
-//                 return -1;
-//             v = temp->val;
-//             if( m.find(v) == m.end())
-//                 m[v]++;
-//             else
-//                 i--;
-//             temp = temp->right;
-//              cout<<v<<" ";
-//         }
-        return v;
+
     }
 };
