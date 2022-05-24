@@ -20,7 +20,6 @@ public:
         if( idx == n)
         {
             sum += cal( v, idx);
-            // v1.push_back(v);
             return;
         }
         
@@ -29,6 +28,7 @@ public:
         v.pop_back();
         print( idx+1, v, arr, n, sum);
     }
+    
     int subsetXORSum(vector<int>& nums) {
         int n = nums.size();
         vector<int>v;
